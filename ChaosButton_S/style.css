@@ -1,0 +1,22 @@
+.container {
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+#myImage{
+    width:400px;
+    display:none;
+}
+#button{
+    position : absolute;
+
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    font-style: helvetica;
+    font-size: 32px;
+    cursor: pointer;
+}
