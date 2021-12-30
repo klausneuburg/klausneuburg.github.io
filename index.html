@@ -1,108 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Ein Artikel</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="progress"></div>
-    <header>
-        <img src="images/logo.png" alt="">
-        <a href="#menu">
-            <img src="images/menu.svg" alt="">
-        </a>
-    </header>
-
-    <article>
-
-        <div id="box"></div>
-
-        <!-- <label for="input">Gib eine Zahl zwischen 1 und 6 ein.</label> <br><br>
-        <label for="input">oder das Wort "Apfel" ein.</label> <br><br>
-        <input type="text" id="input" name="input"><br><br>
-
-        <button onclick="myFunction()">Try it</button> <br><br>
-
-        <p id="info"></p> <br><br> -->
-
-
-        <script>
-            var up = false,
-                right = false,
-                down = false,
-                left = false,
-                x = window.innerWidth / 2 - 130 / 2,
-                y = window.innerHeight / 2 - 130 / 2
-            document.addEventListener('keydown', press)
-            function press(e) {
-                if (e.keyCode === 38 /* up */ || e.keyCode === 87 /* w */ || e.keyCode === 90 /* z */) {
-                    up = true
-                }
-                if (e.keyCode === 39 /* right */ || e.keyCode === 68 /* d */) {
-                    right = true
-                }
-                if (e.keyCode === 40 /* down */ || e.keyCode === 83 /* s */) {
-                    down = true
-                }
-                if (e.keyCode === 37 /* left */ || e.keyCode === 65 /* a */ || e.keyCode === 81 /* q */) {
-                    left = true
-                }
-            }
-            document.addEventListener('keyup', release)
-            function release(e) {
-                if (e.keyCode === 38 /* up */ || e.keyCode === 87 /* w */ || e.keyCode === 90 /* z */) {
-                    up = false
-                }
-                if (e.keyCode === 39 /* right */ || e.keyCode === 68 /* d */) {
-                    right = false
-                }
-                if (e.keyCode === 40 /* down */ || e.keyCode === 83 /* s */) {
-                    down = false
-                }
-                if (e.keyCode === 37 /* left */ || e.keyCode === 65 /* a */ || e.keyCode === 81 /* q */) {
-                    left = false
-                }
-            }
-            function gameLoop() {
-                var div = document.getElementById('box');
-                var divinfo = div.getBoundingClientRect();
-                    console.log(div.offsetLeft);
-                    console.log(window.innerWidth);
-                if (up && div.offsetTop > 0 )  {
-                    y = y - 10
-                }
-                if (right && div.offsetLeft <  window.innerWidth - divinfo.width) {
-                    x = x + 10
-                }
-                if (down && div.offsetTop <  window.innerHeight - divinfo.height) {
-                    y = y + 10
-                }
-                if (left && div.offsetLeft > 0) {
-                    x = x - 10
-                }
-                div.style.left = x + 'px'
-                div.style.top = y + 'px'
-                window.requestAnimationFrame(gameLoop)
-            }
-            window.requestAnimationFrame(gameLoop)
-        </script>
-
-    </article>
-
-    <footer>
-        <!-- <p>Froh! e.V. is a non-profit association that has made its goal to stir the processes of social formation and develop journalistic formats that open discourses about human values.</p>
-        <ul>
-          <li>FROH! Redaktion</li>
-          <li>FVenloer Str. 463</li>
-          <li>50825 Köln</li>
-          <li>info@froh.ngo</li>
-        </ul> -->
-    </footer>
-    <script src="scripts/scroll.js" charset="utf-8"></script>
+    <section>
+        <div class="day">
+            <h1>1</h1>
+            <h2>30<br>12<br>21</h2>
+        </div>
+        <div class="sketch">
+            <iframe src="https://kdaily20211230.glitch.me"></iframe>
+        </div>
+        <div class="content">
+            <h3>Liste der Stolpersteine in Dresden</h3>
+            <p>Die Liste der Stolpersteine in Dresden enthält sämtliche Stolpersteine, die im Rahmen des gleichnamigen Kunst-Projektes von Gunter Demnig in Dresden verlegt wurden.</p>
+            <a href="https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Dresden">Wikipedia</a>
+            <a href="https://editor.p5js.org/klausneuburg/sketches/oHYyHXs94">Editor</a>
+        </div>
+    </section>
 </body>
-
 </html>
